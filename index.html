@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasil Contra as Bets — Sua vida não é uma aposta</title>
+  <meta name="description" content="Informação e conscientização sobre os riscos das apostas online e caminhos para quem deseja parar de apostar." />
+  <meta name="keywords" content="apostas online, bets, jogos de azar, dependência de apostas, ajuda para apostadores, conscientização, endividamento, saúde mental" />
+  <meta name="author" content="Brasil Contra as Bets" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Brasil Contra as Bets — Sua vida não é uma aposta" />
+  <meta property="og:description" content="Informação e conscientização sobre os riscos das apostas online e caminhos para quem deseja parar de apostar." />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Favicon simples via emoji (evita dependência externa) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛑</text></svg>" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Aviso para leitores de tela pularem para o conteúdo -->
+  <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top app-navbar" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Brasil <strong>Contra</strong> as Bets
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#problema">O problema</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sinais">Sinais de alerta</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ajuda">Ajuda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item mt-2 mt-lg-0">
+              <a class="btn btn-signature btn-sm px-3" href="#assinar">Assinar o movimento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero" aria-label="Abertura">
+      <div class="hero-ticker" aria-hidden="true">
+        <div class="hero-ticker-track">
+          <span>ENDIVIDAMENTO NÃO É AZAR — É PROJETO&nbsp;&nbsp;•&nbsp;&nbsp;A CASA SEMPRE VENCE NO LONGO PRAZO&nbsp;&nbsp;•&nbsp;&nbsp;SUA VIDA NÃO ESTÁ NA TABELA DE ODDS&nbsp;&nbsp;•&nbsp;&nbsp;PARAR É POSSÍVEL, E VOCÊ NÃO ESTÁ SOZINHO&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+          <span>ENDIVIDAMENTO NÃO É AZAR — É PROJETO&nbsp;&nbsp;•&nbsp;&nbsp;A CASA SEMPRE VENCE NO LONGO PRAZO&nbsp;&nbsp;•&nbsp;&nbsp;SUA VIDA NÃO ESTÁ NA TABELA DE ODDS&nbsp;&nbsp;•&nbsp;&nbsp;PARAR É POSSÍVEL, E VOCÊ NÃO ESTÁ SOZINHO&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+        </div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="row align-items-center gy-5">
+          <!-- Lado esquerdo -->
+          <div class="col-md-6 fade-in-up">
+            <span class="eyebrow"><i class="bi bi-exclamation-triangle-fill"></i> Movimento de conscientização</span>
+            <h1 class="hero-title">Sua vida<br>não é uma<br><span class="hero-title-accent">aposta.</span></h1>
+            <p class="hero-lead">
+              As apostas podem parecer apenas diversão, mas podem causar endividamento,
+              problemas familiares, ansiedade, perda de controle e comprometer o futuro
+              de milhares de pessoas.
+            </p>
+            <p class="hero-call">
+              Junte-se a quem acredita que o Brasil precisa falar sobre esse problema.
+            </p>
+            <a href="#assinar" class="btn btn-signature btn-lg mt-2">
+              Quero assinar o movimento <i class="bi bi-arrow-down ms-1"></i>
+            </a>
+          </div>
+
+          <!-- Lado direito: formulário -->
+          <div class="col-md-6 fade-in-up delay-1" id="assinar">
+            <div class="signup-card">
+              <div class="signup-card-header">
+                <i class="bi bi-feather"></i>
+                <h2>Assine este movimento</h2>
+              </div>
+              <p class="signup-card-sub" id="signupCardSub">
+                Seu nome se soma a um chamado nacional por mais informação e responsabilidade sobre as apostas.
+              </p>
+
+              <form id="formAssinatura" novalidate>
+                <div class="mb-3 text-start">
+                  <label for="nomeCompleto" class="form-label">Nome completo</label>
+                  <input type="text" class="form-control" id="nomeCompleto" name="nomeCompleto"
+                    placeholder="Digite seu nome completo" required minlength="3" autocomplete="name" />
+                  <div class="invalid-feedback">Por favor, informe seu nome completo.</div>
+                </div>
+
+                <div class="mb-3 text-start">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email"
+                    placeholder="seuemail@exemplo.com" required autocomplete="email" />
+                  <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
+                </div>
+
+                <button type="submit" class="btn btn-signature w-100 btn-lg mt-2" id="btnAssinar">
+                  <span class="btn-text">QUERO ASSINAR</span>
+                  <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                </button>
+
+                <div class="form-status mt-3" id="formStatus" role="status" aria-live="polite"></div>
+              </form>
+
+              <!-- Painel de agradecimento, exibido após o envio bem-sucedido -->
+              <div class="thank-you-panel d-none" id="thankYouPanel" role="status" aria-live="polite" tabindex="-1">
+                <div class="thank-you-icon"><i class="bi bi-check-circle-fill"></i></div>
+                <h3>Obrigado, <span id="thankYouName">amigo</span>!</h3>
+                <p>Sua assinatura foi registrada e agora faz parte do <strong>Brasil Contra as Bets</strong>. Obrigado por fazer parte desse movimento.</p>
+                <button type="button" class="btn btn-outline-light btn-sm" id="btnAssinarOutro">
+                  Assinar com outro nome
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== O PROBLEMA ===================== -->
+    <section id="problema" class="section section-dark reveal" aria-labelledby="problema-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="warning-tag"><span class="warning-dot"></span> O problema</span>
+          <h2 id="problema-title">Não é apenas um jogo.</h2>
+          <p class="section-sub">
+            As apostas podem ultrapassar a ideia de entretenimento e se transformar,
+            para algumas pessoas, em um comportamento problemático — com consequências
+            que vão muito além do valor apostado.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card">
+              <div class="impact-icon">💰</div>
+              <h3>Endividamento</h3>
+              <p>A busca por recuperar dinheiro perdido pode levar a novas apostas e aumentar as dívidas.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card">
+              <div class="impact-icon">🧠</div>
+              <h3>Saúde mental</h3>
+              <p>A perda de controle pode estar associada a ansiedade, estresse, culpa e sofrimento psicológico.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card">
+              <div class="impact-icon">👨‍👩‍👧</div>
+              <h3>Relações familiares</h3>
+              <p>Problemas financeiros e comportamentais podem afetar relacionamentos e a convivência familiar.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card">
+              <div class="impact-icon">📉</div>
+              <h3>Perda de controle</h3>
+              <p>O usuário pode começar apostando ocasionalmente e passar a dedicar cada vez mais tempo e dinheiro às apostas.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card">
+              <div class="impact-icon">💸</div>
+              <h3>Perdas não voltam com outra aposta</h3>
+              <p>Tentar "recuperar" o que foi perdido apostando de novo é um ciclo que tende a aumentar o prejuízo, não a resolvê-lo.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card">
+              <div class="impact-icon">🎯</div>
+              <h3>A casa sempre tem vantagem</h3>
+              <p>As plataformas de apostas são estruturadas matematicamente para ter lucro. Ganhar algumas vezes não significa lucro no longo prazo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMO AS BETS PRENDEM VOCÊ ===================== -->
+    <section id="mecanismos" class="section reveal" aria-labelledby="mecanismos-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="warning-tag"><span class="warning-dot"></span> Mecanismos de retenção</span>
+          <h2 id="mecanismos-title">Como as bets prendem você.</h2>
+          <p class="section-sub">
+            As plataformas de apostas utilizam diversos recursos para manter o usuário
+            engajado o maior tempo possível. Conhecer esses mecanismos ajuda a
+            reconhecer quando você está sendo estimulado a continuar apostando.
+          </p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="hook-card"><i class="bi bi-gift-fill"></i><span>Bônus e promoções</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="hook-card"><i class="bi bi-bell-fill"></i><span>Notificações constantes</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="hook-card"><i class="bi bi-lightning-charge-fill"></i><span>Sensação de ganho fácil</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="hook-card"><i class="bi bi-trophy-fill"></i><span>Recompensas e níveis</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="hook-card"><i class="bi bi-broadcast"></i><span>Apostas ao vivo</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="hook-card"><i class="bi bi-arrow-repeat"></i><span>Estímulo à recuperação de perdas</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="hook-card"><i class="bi bi-star-fill"></i><span>Publicidade com celebridades e esportes</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="hook-card"><i class="bi bi-phone-fill"></i><span>Facilidade de apostar pelo celular</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SINAIS DE ALERTA ===================== -->
+    <section id="sinais" class="section section-dark reveal" aria-labelledby="sinais-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="warning-tag warning-tag-alert"><span class="warning-dot"></span> Autoavaliação</span>
+          <h2 id="sinais-title">Talvez seja hora de pedir ajuda.</h2>
+          <p class="section-sub">
+            Estes sinais não são um diagnóstico — mas podem indicar que as apostas
+            estão deixando de ser apenas um lazer.
+          </p>
+        </div>
+
+        <ul class="signal-list">
+          <li><i class="bi bi-exclamation-circle"></i> Apostar mais dinheiro do que poderia perder.</li>
+          <li><i class="bi bi-exclamation-circle"></i> Tentar recuperar dinheiro perdido apostando novamente.</li>
+          <li><i class="bi bi-exclamation-circle"></i> Esconder das pessoas quanto está apostando.</li>
+          <li><i class="bi bi-exclamation-circle"></i> Pedir dinheiro emprestado para apostar.</li>
+          <li><i class="bi bi-exclamation-circle"></i> Deixar de pagar contas para continuar apostando.</li>
+          <li><i class="bi bi-exclamation-circle"></i> Pensar constantemente em apostas.</li>
+          <li><i class="bi bi-exclamation-circle"></i> Tentar parar e não conseguir.</li>
+          <li><i class="bi bi-exclamation-circle"></i> Prejudicar trabalho, estudos ou relacionamentos por causa das apostas.</li>
+        </ul>
+
+        <p class="signal-note">
+          <i class="bi bi-heart-fill"></i>
+          Se você se identificou com esses sinais, procurar ajuda pode ser um passo importante.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO DE AJUDA ===================== -->
+    <section id="ajuda" class="section section-help reveal" aria-labelledby="ajuda-title">
+      <div class="container">
+        <div class="help-panel">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="warning-tag warning-tag-help"><i class="bi bi-life-preserver"></i> Caminho de ajuda</span>
+              <h2 id="ajuda-title">Quer parar de apostar?<br>Você não precisa fazer isso sozinho.</h2>
+              <p class="section-sub section-sub-light">
+                Não existe julgamento aqui — apenas caminhos práticos que podem ajudar
+                você a retomar o controle, no seu tempo.
+              </p>
+              <a href="https://www.gov.br/saude" target="_blank" rel="noopener noreferrer" class="btn btn-help btn-lg mt-2">
+                Preciso de ajuda <i class="bi bi-arrow-up-right ms-1"></i>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <ul class="help-list">
+                <li><i class="bi bi-check2-circle"></i> Converse com alguém de confiança.</li>
+                <li><i class="bi bi-check2-circle"></i> Procure ajuda profissional.</li>
+                <li><i class="bi bi-check2-circle"></i> Evite acessar plataformas de apostas.</li>
+                <li><i class="bi bi-check2-circle"></i> Remova aplicativos relacionados a apostas.</li>
+                <li><i class="bi bi-check2-circle"></i> Bloqueie notificações e publicidade.</li>
+                <li><i class="bi bi-check2-circle"></i> Evite situações que estimulem a vontade de apostar.</li>
+                <li><i class="bi bi-check2-circle"></i> Organize suas finanças.</li>
+                <li><i class="bi bi-check2-circle"></i> Procure serviços públicos ou profissionais especializados.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== O QUE PODEMOS FAZER ===================== -->
+    <section id="mobilizacao" class="section reveal" aria-labelledby="mobilizacao-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="warning-tag"><span class="warning-dot"></span> Mobilização</span>
+          <h2 id="mobilizacao-title">Mudar essa realidade começa com informação.</h2>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="action-card"><i class="bi bi-chat-dots-fill"></i><p>Falar sobre os riscos das apostas.</p></div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="action-card"><i class="bi bi-share-fill"></i><p>Compartilhar informação responsável.</p></div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="action-card"><i class="bi bi-x-octagon-fill"></i><p>Não normalizar o endividamento causado por apostas.</p></div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="action-card"><i class="bi bi-people-fill"></i><p>Incentivar pessoas próximas a buscar ajuda.</p></div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="action-card"><i class="bi bi-question-diamond-fill"></i><p>Questionar a ideia de dinheiro fácil.</p></div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="action-card"><i class="bi bi-shield-fill-check"></i><p>Apoiar políticas de prevenção e proteção.</p></div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="mobilize-call">Faça parte dessa conversa.</p>
+          <a href="#assinar" class="btn btn-signature btn-lg">ASSINAR O MOVIMENTO</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DADOS E CONSCIENTIZAÇÃO ===================== -->
+    <section id="dados" class="section section-dark reveal" aria-labelledby="dados-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="warning-tag"><span class="warning-dot"></span> Dados oficiais</span>
+          <h2 id="dados-title">O impacto vai além do dinheiro.</h2>
+          <p class="section-sub">
+            Estes números vêm de fontes públicas e oficiais brasileiras. Consulte
+            sempre a fonte original para o contexto completo dos dados.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="data-card">
+              <p class="data-text">
+                O Banco Central e o Ministério da Fazenda têm acompanhado o volume
+                de recursos movimentados em apostas de quota fixa ("bets") no país e
+                seus efeitos sobre o orçamento das famílias brasileiras.
+              </p>
+              <a href="https://www.gov.br/fazenda/pt-br" target="_blank" rel="noopener noreferrer" class="data-source">
+                Fonte: Ministério da Fazenda <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="data-card">
+              <p class="data-text">
+                O Ministério da Saúde reconhece o transtorno do jogo (jogo patológico)
+                como uma condição de saúde mental que pode exigir acompanhamento
+                especializado pelo SUS.
+              </p>
+              <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer" class="data-source">
+                Fonte: Ministério da Saúde <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="data-card">
+              <p class="data-text">
+                O Banco Central publica periodicamente estudos sobre o uso do
+                crédito e do Pix associado a apostas online, incluindo o
+                comprometimento de renda de beneficiários de programas sociais.
+              </p>
+              <a href="https://www.bcb.gov.br" target="_blank" rel="noopener noreferrer" class="data-source">
+                Fonte: Banco Central do Brasil <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="data-disclaimer">
+          <i class="bi bi-info-circle"></i>
+          Este site não reproduz números específicos para evitar dados desatualizados
+          ou imprecisos. Acesse as fontes acima para consultar os estudos e relatórios completos.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="section reveal" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="warning-tag"><span class="warning-dot"></span> Perguntas frequentes</span>
+          <h2 id="faq-title">FAQ</h2>
+        </div>
+
+        <div class="accordion faq-accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeading1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                Apostar pouco também pode ser um problema?
+              </button>
+            </h3>
+            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Sim. O problema não está apenas no valor apostado, mas na frequência,
+                na dificuldade de parar e no impacto que a aposta tem na vida da pessoa.
+                Mesmo valores pequenos podem se tornar um hábito difícil de controlar.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                Como saber se perdi o controle?
+              </button>
+            </h3>
+            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Alguns sinais incluem apostar mais do que planejava, tentar recuperar
+                perdas apostando de novo, esconder o quanto aposta e sentir dificuldade
+                para parar mesmo querendo. Veja a seção "Sinais de alerta" para mais detalhes.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                É possível parar de apostar?
+              </button>
+            </h3>
+            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Sim, é possível, embora o processo varie de pessoa para pessoa e
+                muitas vezes exija apoio de outras pessoas ou de profissionais
+                especializados. O primeiro passo costuma ser reconhecer o problema e buscar ajuda.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                O que fazer quando alguém da família está apostando demais?
+              </button>
+            </h3>
+            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Converse com empatia, evite julgamentos e ofereça apoio para que a
+                pessoa procure ajuda profissional. Buscar orientação para você
+                também é importante, já que o problema costuma afetar toda a família.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeading5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                Onde posso procurar ajuda?
+              </button>
+            </h3>
+            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Serviços de saúde do SUS, como os Centros de Atenção Psicossocial (CAPS),
+                e profissionais de psicologia podem oferecer acompanhamento. Consulte
+                o botão "Preciso de ajuda" nesta página para informações oficiais.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHAMADA FINAL ===================== -->
+    <section id="chamada-final" class="section-final reveal" aria-labelledby="final-title">
+      <div class="container text-center">
+        <h2 id="final-title">Sua vida vale mais<br>do que uma aposta.</h2>
+        <p>Assine o Brasil Contra as Bets e ajude a fortalecer a conscientização sobre os riscos das apostas.</p>
+        <a href="#assinar" class="btn btn-signature btn-lg">QUERO FAZER PARTE</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <p class="footer-brand">Brasil <strong>Contra</strong> as Bets</p>
+          <p class="footer-tagline">"Informação também é uma forma de proteção."</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#problema">O problema</a></li>
+            <li><a href="#sinais">Sinais de alerta</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Aviso</h4>
+          <p class="footer-note">
+            Este site possui caráter informativo e de conscientização.
+            Não substitui orientação profissional.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <p class="footer-copy">© 2026 Brasil Contra as Bets. Movimento de conscientização.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script principal (módulo ES, importa Firebase) -->
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
